@@ -1,0 +1,200 @@
+{
+	"<ds1_0_0>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSize0Between99_1>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds1>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "1326.0^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds1_0_2>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSizeMoreThan250_1>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds1>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "7181.0^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds3_0_0>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSize0Between99_2>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds3>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "357.0^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds3_0_2>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSizeMoreThan250_2>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds3>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "2305.0^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds5_0_1>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSize100Between249_3>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds5>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "0.379^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds1_0_1>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSize100Between249_1>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds1>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "9116.0^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds3_0_1>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSize100Between249_2>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds3>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "3452.0^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds5_0_0>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSize0Between99_3>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds5>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "0.269^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	],
+	"<ds5_0_2>": [
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<WorkforceSizeMoreThan250_3>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#dimension",
+			"o": "<AllIndustries>"
+		},
+		{
+			"p": "http://purl.org/linked-data/cube#observation",
+			"o": "<ds5>"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+			"o": "0.321^^http://www.w3.org/2001/XMLSchema#decimal"
+		},
+		{
+			"p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+			"o": "http://purl.org/linked-data/cube#Observation"
+		}
+	]
+}
