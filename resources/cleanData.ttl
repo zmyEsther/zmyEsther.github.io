@@ -2,9 +2,26 @@
 @prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Dimensions
+
+<Country> rdfs:subClassOf qb:dimension ;
+	dc:title "Country" .
+
+<TimePeriod> rdfs:subClassOf qb:dimension ;
+	dc:title "6 April to 19 April 2020" .
+
+<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by country, UK, 6 April to 19 April 2020" .
+
+<PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of all responding businesses, broken down by country, UK, 6 April to 19 April 2020" .
+
+<NumberofResponses> rdfs:subClassOf qb:dimension ;
+	dc:title "Number of Responses" .
+
+<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by size band, UK, 6 April to 19 April 2020" .
 
 <Industry> rdfs:subClassOf qb:dimension ;
 	dc:title "Industry" .
@@ -12,8 +29,8 @@
 <TotalNumberofSurveysSentOut> rdfs:subClassOf qb:dimension ;
 	dc:title "Total Number of Surveys Sent Out" .
 
-<NumberofResponses> rdfs:subClassOf qb:dimension ;
-	dc:title "Number of Responses" .
+<PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of all responding businesses, broken down by size band, UK, 6 April to 19 April 2020" .
 
 <ProportionofResponses> rdfs:subClassOf qb:dimension ;
 	dc:title "Proportion of Responses" .
@@ -21,133 +38,28 @@
 <PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
 	dc:title "Percentage of all responding businesses, broken down by industry, UK, 6 April to 19 April 2020" .
 
-<TimePeriod> rdfs:subClassOf qb:dimension ;
-	dc:title "6 April to 19 April 2020" .
+<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" .
 
 <WorkforceSize> rdfs:subClassOf qb:dimension ;
 	dc:title "Workforce Size" .
 
-<PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
-	dc:title "Percentage of all responding businesses, broken down by size band, UK, 6 April to 19 April 2020" .
-
-<Country> rdfs:subClassOf qb:dimension ;
-	dc:title "Country" .
-
-<PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
-	dc:title "Percentage of all responding businesses, broken down by country, UK, 6 April to 19 April 2020" .
-
-<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
-	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" .
-
-<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
-	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by size band, UK, 6 April to 19 April 2020" .
-
-<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
-	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by country, UK, 6 April to 19 April 2020" .
-
 # Variables
-
-<MiningAndQuarrying> rdf:type <Industry> ;
-	dc:title "Mining And Quarrying" .
-
-<Manufacturing> rdf:type <Industry> ;
-	dc:title "Manufacturing" .
-
-<WaterSupplySewerageWasteManagementAndRemediationActivities> rdf:type <Industry> ;
-	dc:title "Water Supply, Sewerage, Waste Management And Remediation Activities" .
-
-<Construction> rdf:type <Industry> ;
-	dc:title "Construction" .
-
-<WholesaleAndRetailTrade;RepairOfMotorVehiclesAndMotorcycles> rdf:type <Industry> ;
-	dc:title "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles" .
-
-<AccommodationAndFoodServiceActivities> rdf:type <Industry> ;
-	dc:title "Accommodation And Food Service Activities" .
-
-<TransportationAndStorage> rdf:type <Industry> ;
-	dc:title "Transportation And Storage" .
-
-<InformationAndCommunication> rdf:type <Industry> ;
-	dc:title "Information And Communication" .
-
-<RealEstateActivities> rdf:type <Industry> ;
-	dc:title "Real Estate Activities" .
-
-<ProfessionalScientificAndTechnicalActivities> rdf:type <Industry> ;
-	dc:title "Professional, Scientific And Technical Activities" .
-
-<AdministrativeAndSupportServiceActivities> rdf:type <Industry> ;
-	dc:title "Administrative And Support Service Activities" .
-
-<Education> rdf:type <Industry> ;
-	dc:title "Education" .
-
-<HumanHealthAndSocialWorkActivities> rdf:type <Industry> ;
-	dc:title "Human Health And Social Work Activities" .
-
-<ArtsEntertainmentAndRecreation> rdf:type <Industry> ;
-	dc:title "Arts, Entertainment And Recreation" .
-
-<OtherServiceActivities> rdf:type <Industry> ;
-	dc:title "Other Service Activities" .
-
-<AllIndustries> rdf:type <Industry> ;
-	dc:title "All Industries" .
-
-<WorkforceSizeLessThan250_1> rdf:type <TotalNumberofSurveysSentOut> ;
-	dc:title "Workforce Size < 250" .
-
-<WorkforceSizeMoreThan250_1> rdf:type <TotalNumberofSurveysSentOut> ;
-	dc:title "Workforce Size 250 +" .
-
-<AllSizeBands_1> rdf:type <TotalNumberofSurveysSentOut> ;
-	dc:title "All Size Bands" .
-
-<WorkforceSize0Between99_1> rdf:type <TotalNumberofSurveysSentOut> ;
-	dc:title "Workforce Size 0 - 99" .
-
-<WorkforceSize100Between249_1> rdf:type <TotalNumberofSurveysSentOut> ;
-	dc:title "Workforce Size 100 - 249" .
-
-<WorkforceSizeLessThan250_2> rdf:type <NumberofResponses> ;
-	dc:title "Workforce Size < 250" .
-
-<WorkforceSizeMoreThan250_2> rdf:type <NumberofResponses> ;
-	dc:title "Workforce Size 250 +" .
-
-<AllSizeBands_2> rdf:type <NumberofResponses> ;
-	dc:title "All Size Bands" .
-
-<WorkforceSize0Between99_2> rdf:type <NumberofResponses> ;
-	dc:title "Workforce Size 0 - 99" .
-
-<WorkforceSize100Between249_2> rdf:type <NumberofResponses> ;
-	dc:title "Workforce Size 100 - 249" .
-
-<WorkforceSizeLessThan250_3> rdf:type <ProportionofResponses> ;
-	dc:title "Workforce Size < 250" .
-
-<WorkforceSizeMoreThan250_3> rdf:type <ProportionofResponses> ;
-	dc:title "Workforce Size 250 +" .
-
-<AllSizeBands_3> rdf:type <ProportionofResponses> ;
-	dc:title "All Size Bands" .
-
-<WorkforceSize0Between99_3> rdf:type <ProportionofResponses> ;
-	dc:title "Workforce Size 0 - 99" .
-
-<WorkforceSize100Between249_3> rdf:type <ProportionofResponses> ;
-	dc:title "Workforce Size 100 - 249" .
 
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
 
-<Continuingtotrade_1> rdf:type <PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Continuing to trade" .
+<GovernmentBetweenfundedsmallbusinessgrantorloanschemes_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Government-funded small business grant or loan schemes" .
 
-<Haspermanentlyceasedtrading_1> rdf:type <PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Has permanently ceased trading **" .
+<Construction> rdf:type <Industry> ;
+	dc:title "Construction" .
+
+<Scotland> rdf:type <Country> ;
+	dc:title "Scotland" .
+
+<WorkforceSize100Between249_3> rdf:type <ProportionofResponses> ;
+	dc:title "Workforce Size 100 - 249" .
 
 <Hastemporarilyclosedortemporarilypausedtrading_1> rdf:type <PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> ;
 	dc:title "Has temporarily closed or temporarily paused trading" .
@@ -155,128 +67,110 @@
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
 
-<WorkforceSizeLessThan250_4> rdf:type <WorkforceSize> ;
-	dc:title "Workforce Size < 250" .
+<Wehavenotappliedforanyoftheseinitiatives_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "We have not applied for any of these initiatives" .
 
-<WorkforceSizeMoreThan250_4> rdf:type <WorkforceSize> ;
-	dc:title "Workforce Size 250 +" .
+<OtherServiceActivities> rdf:type <Industry> ;
+	dc:title "Other Service Activities" .
 
-<AllSizeBands_4> rdf:type <WorkforceSize> ;
-	dc:title "All Size Bands" .
+<ArtsEntertainmentAndRecreation> rdf:type <Industry> ;
+	dc:title "Arts, Entertainment And Recreation" .
 
-<Continuingtotrade_2> rdf:type <PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Continuing to trade" .
-
-<Haspermanentlyceasedtrading_2> rdf:type <PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Has permanently ceased trading **" .
-
-<Hastemporarilyclosedortemporarilypausedtrading_2> rdf:type <PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Has temporarily closed or temporarily paused trading" .
+<MiningAndQuarrying> rdf:type <Industry> ;
+	dc:title "Mining And Quarrying" .
 
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
 
-<Continuingtotrade_3> rdf:type <PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> ;
-	dc:title "Continuing to trade" .
+<AdministrativeAndSupportServiceActivities> rdf:type <Industry> ;
+	dc:title "Administrative And Support Service Activities" .
 
-<Haspermanentlyceasedtrading_3> rdf:type <PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> ;
-	dc:title "Has permanently ceased trading **" .
+<TP06to19April2020_1> rdf:type <TimePeriod> ;
+	dc:title "6 April to 19 April 2020" .
+
+<TP06to19April2020_1> rdf:type <TimePeriod> ;
+	dc:title "6 April to 19 April 2020" .
 
 <Hastemporarilyclosedortemporarilypausedtrading_3> rdf:type <PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> ;
 	dc:title "Has temporarily closed or temporarily paused trading" .
 
-<England> rdf:type <Country> ;
-	dc:title "England" .
-
-<Wales> rdf:type <Country> ;
-	dc:title "Wales" .
-
-<Scotland> rdf:type <Country> ;
-	dc:title "Scotland" .
-
 <NorthernIreland> rdf:type <Country> ;
 	dc:title "Northern Ireland" .
 
-<UK> rdf:type <Country> ;
-	dc:title "UK" .
+<HumanHealthAndSocialWorkActivities> rdf:type <Industry> ;
+	dc:title "Human Health And Social Work Activities" .
 
-<TP06to19April2020_1> rdf:type <TimePeriod> ;
-	dc:title "6 April to 19 April 2020" .
+<AllSizeBands_1> rdf:type <TotalNumberofSurveysSentOut> ;
+	dc:title "All Size Bands" .
 
-<CoronavirusJobRetentionScheme_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Coronavirus Job Retention Scheme" .
+<WorkforceSizeLessThan250_3> rdf:type <ProportionofResponses> ;
+	dc:title "Workforce Size < 250" .
 
-<Businessratesholiday_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Business rates holiday" .
+<WorkforceSize100Between249_2> rdf:type <NumberofResponses> ;
+	dc:title "Workforce Size 100 - 249" .
 
-<DeferringVATpayments_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Deferring VAT payments" .
+<WorkforceSize0Between99_3> rdf:type <ProportionofResponses> ;
+	dc:title "Workforce Size 0 - 99" .
 
-<HMRCTimeToPayscheme_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "HMRC Time To Pay scheme" .
+<WorkforceSize0Between99_1> rdf:type <TotalNumberofSurveysSentOut> ;
+	dc:title "Workforce Size 0 - 99" .
 
-<GovernmentBetweenfundedsmallbusinessgrantorloanschemes_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Government-funded small business grant or loan schemes" .
+<WorkforceSizeLessThan250_2> rdf:type <NumberofResponses> ;
+	dc:title "Workforce Size < 250" .
 
-<Accreditedfinanceagreements_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "Accredited finance agreements" .
+<Haspermanentlyceasedtrading_3> rdf:type <PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> ;
+	dc:title "Has permanently ceased trading **" .
+
+<WorkforceSize100Between249_1> rdf:type <TotalNumberofSurveysSentOut> ;
+	dc:title "Workforce Size 100 - 249" .
+
+<WorkforceSizeLessThan250_4> rdf:type <WorkforceSize> ;
+	dc:title "Workforce Size < 250" .
+
+<WaterSupplySewerageWasteManagementAndRemediationActivities> rdf:type <Industry> ;
+	dc:title "Water Supply, Sewerage, Waste Management And Remediation Activities" .
+
+<Education> rdf:type <Industry> ;
+	dc:title "Education" .
+
+<Continuingtotrade_1> rdf:type <PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Continuing to trade" .
 
 <Wehavenotappliedforanyoftheseinitiatives_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
 	dc:title "We have not applied for any of these initiatives" .
 
-<TP06to19April2020_1> rdf:type <TimePeriod> ;
-	dc:title "6 April to 19 April 2020" .
-
-<CoronavirusJobRetentionScheme_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Coronavirus Job Retention Scheme" .
-
-<Businessratesholiday_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Business rates holiday" .
-
-<DeferringVATpayments_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Deferring VAT payments" .
-
-<HMRCTimeToPayscheme_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+<HMRCTimeToPayscheme_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
 	dc:title "HMRC Time To Pay scheme" .
 
-<GovernmentBetweenfundedsmallbusinessgrantorloanschemes_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Government-funded small business grant or loan schemes" .
-
-<Accreditedfinanceagreements_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "Accredited finance agreements" .
-
-<Wehavenotappliedforanyoftheseinitiatives_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "We have not applied for any of these initiatives" .
-
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
+
+<WorkforceSizeMoreThan250_1> rdf:type <TotalNumberofSurveysSentOut> ;
+	dc:title "Workforce Size 250 +" .
+
+<RealEstateActivities> rdf:type <Industry> ;
+	dc:title "Real Estate Activities" .
+
+<CoronavirusJobRetentionScheme_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Coronavirus Job Retention Scheme" .
 
 <CoronavirusJobRetentionScheme_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
 	dc:title "Coronavirus Job Retention Scheme" .
 
-<Businessratesholiday_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
-	dc:title "Business rates holiday" .
-
-<DeferringVATpayments_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
-	dc:title "Deferring VAT payments" .
+<Accreditedfinanceagreements_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
+	dc:title "Accredited finance agreements" .
 
 <HMRCTimeToPayscheme_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
 	dc:title "HMRC Time To Pay scheme" .
 
-<GovernmentBetweenfundedsmallbusinessgrantorloanschemes_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
-	dc:title "Government-funded small business grant or loan schemes" .
+<UK> rdf:type <Country> ;
+	dc:title "UK" .
 
-<Accreditedfinanceagreements_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
-	dc:title "Accredited finance agreements" .
+<DeferringVATpayments_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Deferring VAT payments" .
 
 <Wehavenotappliedforanyoftheseinitiatives_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
 	dc:title "We have not applied for any of these initiatives" .
-
-<TP06to19April2020_1> rdf:type <TimePeriod> ;
-	dc:title "6 April to 19 April 2020" .
-
-<Wehaventreceivedanythatweappliedfor_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
-	dc:title "We haven't received any that we applied for" .
 
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
@@ -287,14 +181,119 @@
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
 
+<WholesaleAndRetailTrade;RepairOfMotorVehiclesAndMotorcycles> rdf:type <Industry> ;
+	dc:title "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles" .
+
+<WorkforceSizeMoreThan250_4> rdf:type <WorkforceSize> ;
+	dc:title "Workforce Size 250 +" .
+
+<Wales> rdf:type <Country> ;
+	dc:title "Wales" .
+
 <Noneoftheabove_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
 	dc:title "None of the above" .
+
+<DeferringVATpayments_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Deferring VAT payments" .
+
+<Accreditedfinanceagreements_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Accredited finance agreements" .
+
+<WorkforceSizeLessThan250_1> rdf:type <TotalNumberofSurveysSentOut> ;
+	dc:title "Workforce Size < 250" .
+
+<Manufacturing> rdf:type <Industry> ;
+	dc:title "Manufacturing" .
+
+<AllSizeBands_2> rdf:type <NumberofResponses> ;
+	dc:title "All Size Bands" .
+
+<HMRCTimeToPayscheme_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "HMRC Time To Pay scheme" .
+
+<Businessratesholiday_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Business rates holiday" .
+
+<Continuingtotrade_3> rdf:type <PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> ;
+	dc:title "Continuing to trade" .
+
+<Wehaventreceivedanythatweappliedfor_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "We haven't received any that we applied for" .
+
+<InformationAndCommunication> rdf:type <Industry> ;
+	dc:title "Information And Communication" .
+
+<WorkforceSize0Between99_2> rdf:type <NumberofResponses> ;
+	dc:title "Workforce Size 0 - 99" .
+
+<CoronavirusJobRetentionScheme_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Coronavirus Job Retention Scheme" .
+
+<Haspermanentlyceasedtrading_2> rdf:type <PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Has permanently ceased trading **" .
+
+<Continuingtotrade_2> rdf:type <PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Continuing to trade" .
+
+<TransportationAndStorage> rdf:type <Industry> ;
+	dc:title "Transportation And Storage" .
+
+<GovernmentBetweenfundedsmallbusinessgrantorloanschemes_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
+	dc:title "Government-funded small business grant or loan schemes" .
+
+<Accreditedfinanceagreements_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Accredited finance agreements" .
+
+<AllSizeBands_4> rdf:type <WorkforceSize> ;
+	dc:title "All Size Bands" .
+
+<Noneoftheabove_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "None of the above" .
+
+<AllSizeBands_3> rdf:type <ProportionofResponses> ;
+	dc:title "All Size Bands" .
 
 <TP06to19April2020_1> rdf:type <TimePeriod> ;
 	dc:title "6 April to 19 April 2020" .
 
-<Noneoftheabove_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
-	dc:title "None of the above" .
+<England> rdf:type <Country> ;
+	dc:title "England" .
+
+<WorkforceSizeMoreThan250_2> rdf:type <NumberofResponses> ;
+	dc:title "Workforce Size 250 +" .
+
+<Businessratesholiday_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
+	dc:title "Business rates holiday" .
+
+<Haspermanentlyceasedtrading_1> rdf:type <PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Has permanently ceased trading **" .
+
+<WorkforceSizeMoreThan250_3> rdf:type <ProportionofResponses> ;
+	dc:title "Workforce Size 250 +" .
+
+<AccommodationAndFoodServiceActivities> rdf:type <Industry> ;
+	dc:title "Accommodation And Food Service Activities" .
+
+<DeferringVATpayments_3> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> ;
+	dc:title "Deferring VAT payments" .
+
+<GovernmentBetweenfundedsmallbusinessgrantorloanschemes_2> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Government-funded small business grant or loan schemes" .
+
+<AllIndustries> rdf:type <Industry> ;
+	dc:title "All Industries" .
+
+<ProfessionalScientificAndTechnicalActivities> rdf:type <Industry> ;
+	dc:title "Professional, Scientific And Technical Activities" .
+
+<TP06to19April2020_1> rdf:type <TimePeriod> ;
+	dc:title "6 April to 19 April 2020" .
+
+<Hastemporarilyclosedortemporarilypausedtrading_2> rdf:type <PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> ;
+	dc:title "Has temporarily closed or temporarily paused trading" .
+
+<Businessratesholiday_1> rdf:type <PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> ;
+	dc:title "Business rates holiday" .
 
 # Dataset ds0
 

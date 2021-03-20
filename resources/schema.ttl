@@ -1,0 +1,45 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Dimensions
+
+<Country> rdfs:subClassOf qb:dimension ;
+	dc:title "Country" .
+
+<TimePeriod> rdfs:subClassOf qb:dimension ;
+	dc:title "6 April to 19 April 2020" .
+
+<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbycountryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by country, UK, 6 April to 19 April 2020" .
+
+<PercentageofallrespondingbusinessesbrokendownbycountryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of all responding businesses, broken down by country, UK, 6 April to 19 April 2020" .
+
+<NumberofResponses> rdfs:subClassOf qb:dimension ;
+	dc:title "Number of Responses" .
+
+<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbysizebandUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by size band, UK, 6 April to 19 April 2020" .
+
+<Industry> rdfs:subClassOf qb:dimension ;
+	dc:title "Industry" .
+
+<TotalNumberofSurveysSentOut> rdfs:subClassOf qb:dimension ;
+	dc:title "Total Number of Surveys Sent Out" .
+
+<PercentageofallrespondingbusinessesbrokendownbysizebandUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of all responding businesses, broken down by size band, UK, 6 April to 19 April 2020" .
+
+<ProportionofResponses> rdfs:subClassOf qb:dimension ;
+	dc:title "Proportion of Responses" .
+
+<PercentageofallrespondingbusinessesbrokendownbyindustryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of all responding businesses, broken down by industry, UK, 6 April to 19 April 2020" .
+
+<PercentageofbusinesseseithercontinuingtotradeorwhohavetemporarilypausedorceasedtradingbrokendownbyindustryUK6Aprilto19April2020> rdfs:subClassOf qb:dimension ;
+	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" .
+
+<WorkforceSize> rdfs:subClassOf qb:dimension ;
+	dc:title "Workforce Size" .
